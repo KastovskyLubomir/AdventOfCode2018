@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		70BB6B8621B2ACCA00BF069A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB6B8521B2ACCA00BF069A /* main.swift */; };
+		70BB6B8D21B30B9300BF069A /* tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB6B8C21B30B9300BF069A /* tools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		70BB6B8221B2ACCA00BF069A /* AOC2018_01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AOC2018_01; sourceTree = BUILT_PRODUCTS_DIR; };
 		70BB6B8521B2ACCA00BF069A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		70BB6B8C21B30B9300BF069A /* tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				70BB6B8521B2ACCA00BF069A /* main.swift */,
+				70BB6B8C21B30B9300BF069A /* tools.swift */,
 			);
 			path = AOC2018_01;
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70BB6B8621B2ACCA00BF069A /* main.swift in Sources */,
+				70BB6B8D21B30B9300BF069A /* tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +249,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -254,6 +259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
