@@ -62,7 +62,7 @@ import Foundation
 
 let idList = readLinesRemoveEmpty(str: inputString)
 
-func countTwoThree(ids: Array<String>) -> (two: Int, three: Int) {
+func checksum(ids: Array<String>) -> Int {
     var two = 0
     var three = 0
     for id in ids {
@@ -70,13 +70,12 @@ func countTwoThree(ids: Array<String>) -> (two: Int, three: Int) {
         two += counts.firstIndex { key, value in value == 2 } != nil ? 1 : 0
         three += counts.firstIndex { key, value in value == 3 } != nil ? 1 : 0
     }
-    return (two, three)
+    return two*three
 }
 
-let pair = countTwoThree(ids: idList)
-print("1. result: ", pair.two*pair.three)
+print("1. result: ", checksum(ids: idList))
 
-func compare(ids: Array<String>) -> (found: Bool, id: String?) {
+func prototypeId(ids: Array<String>) -> String? {
     var diffs = 0
     var index = 0
     for ii in 0..<ids.count {
@@ -96,12 +95,11 @@ func compare(ids: Array<String>) -> (found: Bool, id: String?) {
             }
             if diffs == 1 {
                 idA.remove(at: index)
-                return (true, String(idA))
+                return String(idA)
             }
         }
     }
-    return (false, nil)
+    return nil
 }
 
-let result = compare(ids: idList)
-print("2. result: ", result.id)
+print("2. result: ", prototypeId(ids: idList) ?? "not found")
