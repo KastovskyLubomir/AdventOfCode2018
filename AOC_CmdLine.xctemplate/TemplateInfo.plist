@@ -16,7 +16,7 @@
 	<key>SortOrder</key>
 	<integer>50</integer>
 	<key>Description</key>
-	<string>This template creates adbent of code command-line app.</string>
+	<string>This template creates advent of code command-line app.</string>
 	<key>Targets</key>
 	<array>
 		<dict>

@@ -25,23 +25,13 @@ func stringWordArrayToArrayOfWords(input:String, separators: CharacterSet) -> Ar
 
 // input: "1,2,3,4,5"
 func stringNumArrayToArrayOfInt(input:String, separators: CharacterSet) -> Array<Int> {
-    var result = [Int]()
-    let lenArrStr = input.components(separatedBy: separators)
-    for s in lenArrStr {
-        if(!s.isEmpty) {
-            result.append(Int(s)!)
-        }
-    }
-    return result
+    let strArray = input.components(separatedBy: separators)
+    return strArray.compactMap { Int($0) }
 }
 
 // input: "1","2","3"
-func strArrayToIntArray(str: Array<String>) -> Array<Int> {
-    var result : Array<Int> = []
-    for s in str {
-        result.insert(Int(s)!, at: result.endIndex)
-    }
-    return result
+func strArrayToIntArray(strArray: Array<String>) -> Array<Int> {
+    return strArray.compactMap { Int($0) }
 }
 
 func getStringBytes(str:String) -> Array<UInt8> {
