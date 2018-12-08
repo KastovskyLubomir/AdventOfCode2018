@@ -1,1 +1,2 @@
-# AdventOfCode2018 Solutions in swift.
+# AdventOfCode2018 
+Solutions in swift.
