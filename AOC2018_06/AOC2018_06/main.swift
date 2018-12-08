@@ -140,6 +140,7 @@ func fillGrid(grid: inout Grid, maxX: Int, maxY: Int, coordinates: Array<Coordin
 
 fillGrid(grid: &grid, maxX: maxX, maxY: maxY, coordinates: inputArray)
 
+// TODO: optimalize
 func isOnEdge(coordinate: Coordinate, grid: Grid) -> Bool {
     
     for x in 0...maxX {
@@ -187,7 +188,7 @@ func finiteOccurence(grid: Grid, coordinate: Coordinate) -> Int {
     return result
 }
 
-func biggestOccurence(grid: Grid, coordinates: Array<Coordinate>) -> Int {
+func biggestFiniteOccurence(grid: Grid, coordinates: Array<Coordinate>) -> Int {
     var result = 0
     for coord in coordinates {
         let occurence = finiteOccurence(grid: grid, coordinate: coord)
@@ -198,7 +199,7 @@ func biggestOccurence(grid: Grid, coordinates: Array<Coordinate>) -> Int {
     return result
 }
 
-print("1. result: ", biggestOccurence(grid: grid, coordinates: finiteCoordinates))
+print("1. result: ", biggestFiniteOccurence(grid: grid, coordinates: finiteCoordinates))
 
 func sumAllDistances(x: Int, y: Int, coordinates: Array<Coordinate>) -> Int {
     var sum = 0
