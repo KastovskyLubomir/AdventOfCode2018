@@ -144,6 +144,7 @@
 						<string>main.swift:include</string>
 						<string>main.swift:main:content</string>
 						<string>tools.swift</string>
+						<string>circleList.swift</string>
 					</array>
 					<key>Definitions</key>
 					<dict>
@@ -164,6 +165,11 @@
 						<dict>
 							<key>Path</key>
 							<string>tools.swift</string>
+						</dict>
+						<key>circleList.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>circleList.swift</string>
 						</dict>
 					</dict>
 				</dict>
