@@ -21,7 +21,9 @@ class CircleList<Element> {
         self.count = 0
     }
     
+    /// Points to actual element.
     var actual: Node<Element>?
+    /// Count of elemtns in list.
     var count: Int
     
     /**
@@ -61,7 +63,7 @@ class CircleList<Element> {
     }
     
     /**
-     Move actual to right n-times. n is a parameter.
+     Move actual to right shift-times. Shift is a parameter.
      - Parameter shift: Number of elements to move the actual pointer to the right.
      */
     public func moveToRight(shift: Int) {
@@ -72,7 +74,7 @@ class CircleList<Element> {
     }
     
     /**
-     Move actual to left n-times. n is a parameter.
+     Move actual to left shift-times. Shift is a parameter.
      - Parameter shift: Number of elements to move the actual pointer to the left.
      */
     public func moveToLeft(shift: Int) {

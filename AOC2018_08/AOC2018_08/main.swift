@@ -83,8 +83,6 @@ struct Node {
     }
 }
 
-typealias Tree = Dictionary<Int, Node>
-
 func constructTree(license: Array<Int>, id: Int, startPos: Int) -> (Node, Int, Int) {
     var nodeId = id
     var i = startPos
