@@ -14,7 +14,7 @@ typealias Grid = Array<Array<Int>>
 
 func constructGrid(height: Int, width: Int, serialNumber: Int) -> Grid {
     var grid = Grid()
-    for i in 0..<height {
+    for _ in 0..<height {
         grid.append([Int].init(repeating: 0, count: width))
     }
     
